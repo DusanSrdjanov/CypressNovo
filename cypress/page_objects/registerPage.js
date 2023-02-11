@@ -1,3 +1,4 @@
+
 class RegisterPage {
     get registerLink() {
         return cy.get("a[href='/register']");
@@ -43,3 +44,4 @@ class RegisterPage {
 }
 
 export const registerPage = new RegisterPage();
+

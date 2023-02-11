@@ -1,3 +1,4 @@
+
 /// <reference types="Cypress" />
 
 import { registerPage } from "../page_objects/registerPage";
@@ -18,7 +19,7 @@ describe("Register test", () => {
         cy.url().should("contain", "/register");
     });
 
-    it("register with valid data", () => {
+    it("Register with valid data", () => {
         registerPage.registerWithValidData(
             userData.firstName,
             userData.lastName,
@@ -28,3 +29,4 @@ describe("Register test", () => {
         cy.url().should("not.contain", "/register");
     });
 });
+

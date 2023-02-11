@@ -1,3 +1,4 @@
+
 /// <reference types="Cypress" />
 
 const locators = require("../fixtures/locators.json");
@@ -79,3 +80,4 @@ describe("Register test", () => {
         cy.get(locators.commonFormElements.submitButton).click();
     });
 });
+

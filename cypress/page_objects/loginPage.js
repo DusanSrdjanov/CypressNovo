@@ -1,3 +1,4 @@
+
 class LoginPage {
     get loginLink() {
         return cy.get("a[href='/login']");
@@ -23,4 +24,5 @@ class LoginPage {
 }
 
 export const loginPage = new LoginPage();
+
 

@@ -1,3 +1,4 @@
+
 /// <reference types="Cypress" />
 
 const locators = require("../fixtures/locators.json");
@@ -14,7 +15,7 @@ describe("Login test", () => {
         cy.url().should("contain", "/login");
     });
 
-    it("Login and logout test", () => {
+    it("Login as registered user and logout test", () => {
         cy.get(locators.navbar.loginButton).click();
         cy.get(locators.commonFormElements.emailInput).type("nestonekoneki@gmail.com");
         cy.get(locators.commonFormElements.passwordInput).type("duleduledule991");
@@ -54,5 +55,6 @@ describe("Login test", () => {
       cy.get(locators.commonFormElements.submitButton).click();
     });
   });
+  
   
   

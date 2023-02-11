@@ -1,3 +1,4 @@
+
 /// <reference types="Cypress" />
 
 import { loginPage } from "../page_objects/loginPage";
@@ -13,8 +14,10 @@ describe("Login test", () => {
         loginPage.loginLink.click();
     });
 
-    it("Login with valid credentials test", () => {
+    it("Login with valid credentials as registered user test", () => {
         loginPage.login(credentials.email, credentials.password);
     });
 });
+
+
 
